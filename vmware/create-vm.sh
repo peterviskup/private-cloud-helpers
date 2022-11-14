@@ -1,6 +1,12 @@
 #!/bin/sh
+# script for deployment of VM from template with use of govc utility
+#  - support basic OS configuration with help of cloud-init
+#    https://cloudinit.readthedocs.io/en/latest/topics/datasources/vmware.html
+#  - support Zabbix autoregistration
+#    https://blog.zabbix.com/zabbix-agent-auto-registration/9313/
+# can be extended
 
-#. ./.env.sh
+. ./.env.sh
 
 #IP
 #SNET
