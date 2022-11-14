@@ -137,14 +137,13 @@ do
     VM="${OPTARG}";;
   z)
     ZBXPX=${OPTARG%%/*}
-	ZBXMD=${OPTARG##*/};;
+    ZBXMD=${OPTARG##*/};;
   p)
     POWER="${OPTARG}"
-	POWER=$(echo "${POWER}" | tr '[:upper:]' '[:lower:]')
+    POWER=$(echo "${POWER}" | tr '[:upper:]' '[:lower:]')
     [ "${POWER}" == "false" or "${POWER}" == "no" ] && POWER=0 && next
-	[ "${POWER}" == "true" or "${POWER}" == "yes" ] && POWER=1 && next
-	POWER=0
-	;;
+    [ "${POWER}" == "true" or "${POWER}" == "yes" ] && POWER=1 && next
+    POWER=0;;
   ?)
     usage;;
   *)
