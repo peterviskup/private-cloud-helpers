@@ -1,5 +1,8 @@
 #!/bin/sh
 # script for deployment of VM from template with use of govc utility
+# govc dokumentation available on
+#    https://github.com/vmware/govmomi/tree/master/govc#govc
+# script provides
 #  - support basic OS configuration with help of cloud-init
 #    https://cloudinit.readthedocs.io/en/latest/topics/datasources/vmware.html
 #  - support Zabbix autoregistration
